@@ -1,7 +1,24 @@
-.hello{
-    color: red;
-}
+
 
 @tailwind base;
 @tailwind components;
+
 @tailwind utilities;
+@layer components {
+.btn {
+    @apply inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2;
+
+}
+
+.btn-primary {
+
+ @apply bg-indigo-400 sm:hover:bg-green-700 text-white    uppercase tracking-wider font-semibold sm:text-base hover:bg-indigo-400    focus:ring-offset-indigo-400 focus:ring-opacity-50 active:bg-indigo-600;    
+}
+
+.btn-secondary {
+@apply bg-gray-300 sm:hover:bg-gray-200 text-gray-800    uppercase tracking-wider font-semibold sm:text-base hover:bg-indigo-400  focus:ring-offset-gray-400 focus:ring-opacity-50 active:bg-indigo-600;    
+}    
+        
+
+}
+
